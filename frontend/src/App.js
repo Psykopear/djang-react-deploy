@@ -2,13 +2,11 @@ import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
 
-
 class App extends Component {
   constructor(props) {
     super(props);
-    this.state = {
-      text: 'QOOOOOJ',
-    };
+
+    this.state = { text: 'QOOOOOJ' };
   }
 
   render() {
@@ -22,9 +20,7 @@ class App extends Component {
           asd
           {this.state.text}
         </p>
-      <div onClick={() => this.setState({text: 'ASDASD'})}>
-        CIAOOO
-      </div>
+        <div onClick={() => this.setState({ text: 'ASDASD' })}>CIAOOO</div>
       </div>
     );
   }
